@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help people deliver packages in your destination</title>
+    <style>
+    
+            body {
+              font-family: Arial, sans-serif;
+            }
+        
+            h1 {
+              text-align: center;
+            }
+        
+            .search-container {
+              display: flex;
+              justify-content: center;
+              margin-top: 50px;
+            }
+        
+            .search-box {
+              margin: 0 10px;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+            }
+        
+            .search-button {
+              padding: 10px 20px;
+              background-color: #4CAF50;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+        
+            .search-button:hover {
+              background-color: #45a049;
+            }
+            @media(max-width:768px) {
+                .search-container {
+                  flex-direction: column;
+                  align-items: center;
+                }
+          
+                .search-box {
+                  margin: 10px 0;
+                  width: 80%;
+                }
+              }
+     
+
+    </style>
+
+</head>
+<body>
+   
+    
+      <h1>Search Locations</h1>
+      <div class="search-container">
+        <input type="text" class="search-box" id="location-input" placeholder="Enter location">
+
+
+        <input type="text" class="search-box" id="destination-input" placeholder="Enter destination">
+
+        <button class="search-button" onclick="search()">Search</button>
+      </div>
+     
+      <button><a href="Ask.html"> Main Page</a></button>
+      
+      <script>
+        function search() {
+          var location = document.getElementById("location-input").value;
+          var destination = document.getElementById("destination-input").value;
+          
+          // Perform search or any other action here
+          // You can access the values of location and destination variables
+        }
+      </script>
+
+
+</body>
+</html>
